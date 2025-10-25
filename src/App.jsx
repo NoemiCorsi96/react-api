@@ -55,8 +55,14 @@ function App() {
               {characters.map((character, i) =>
                 <div className="col-12 col-sm-6 col-md-4" key={character.id}>
                   <div className="card h-100">
+                    <img className="card-img-top img-fluid" src={character.image} alt="" />
                     <div className="card-body">
                       <h3>{character.name}</h3>
+                      <h5>{character.birth_year}</h5>
+                      <h5>{character.nationality}</h5>
+                      <h5>{character.biography}</h5>
+                      <h5 className="awards text-warning">{character.awards}</h5>
+
                     </div>
                   </div>
                 </div>
