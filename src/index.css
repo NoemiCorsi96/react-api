@@ -6,3 +6,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.card-img-top {
+  height: 250px;
+  object-fit: contain;
+}
